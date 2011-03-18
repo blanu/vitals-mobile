@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+    <title>Vitals: Health Statistics</title>
+
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"/>
+		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+	</head>
+	<body>
+ 		<div id="title_bar"><strong>Vitals</strong></div>
+
+    <table id="buttoms" class="view">
+      <tr class="num">
+        <td>
+          <button id="weight">Weight</button>
+        </td>
+        <td>
+          <button id="sleep">Sleep</button>
+        </td>
+      </tr>
+      <tr class="emo">
+        <td>
+          <button id="tired">Tired</button>
+        </td>
+        <td>
+          <button id="energetic">Energetic</button>
+        </td>
+      </tr>
+      <tr class="emo">
+        <td>
+          <button id="depressed">Depressed</button>
+        </td>
+        <td>
+          <button id="happy">Happy</button>
+        </td>
+      </tr>
+      <tr class="symptom">
+        <td>
+          <button id="pain">Pain</button>
+        </td>
+        <td>
+          <button id="fatigue">Fatigue</button>
+        </td>
+      </tr>
+    </table>
+
+    <div id="weightDialog">
+      Weight <input type="text" id="weightField"/>
+    </div>
+    <div id="sleepDialog">
+      Sleep <input type="text" id="sleepField"/>
+    </div>
+
+		<script src="phonegap.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+
+    <script src="http://beta.freefalldb.com/lib/debug.js"></script>
+    <script src="http://beta.freefalldb.com/scripts/freefall.js"></script>
+    <script src="vitals.js"></script>
+	</body>
+</html>
